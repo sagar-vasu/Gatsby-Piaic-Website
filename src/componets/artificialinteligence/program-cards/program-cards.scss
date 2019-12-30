@@ -1,0 +1,36 @@
+//----------------- program-cantainer-----------------------//
+
+.program-cantainer{
+    width: 30vw;
+    display: inline-block;
+    padding: 40px;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: 2px 2px 30px 0 rgba(0,0,0,.26);
+    background-color: #fff;
+    cursor: pointer;
+    display: flex !important;
+    
+  }
+  .pack-container{
+    margin: 20px;
+  }
+  .pack-left{
+    justify-content: flex-start !important;
+  }
+  .pack-right{
+    justify-content: flex-end !important;
+  }
+  .para-program{
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: justify;
+    word-spacing: 1px;
+    color: #192a56;
+  }
+  

@@ -1,0 +1,53 @@
+.counter {
+  border-radius: 100%;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 20px;
+  float: right;
+  margin-right: -35px !important;
+  position: relative;
+  right: 0;
+  color: rgb(25, 42, 86);
+  border: 2px solid;
+  border-color: rgb(25, 42, 86);
+}
+.right_Side_box {
+  border-left: 2px solid;
+  border-color: rgb(25, 42, 86);
+  padding-left: 30px;
+}
+@media screen and (max-width: 600px) {
+  .counter {
+    position: absolute;
+    margin-right: 44% !important;
+    margin-top: 0px;
+    margin-top: -40px !important;
+  }
+  .right_Side_box {
+    border-left: 0px !important;
+    padding-left: 0px;
+  }
+  .vertical_line {
+    border: 0px !important;
+  }
+}
+
+.paper {
+  // height: 200px;
+  width: 90%;
+  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.26) !important;
+  padding: 5%;
+}
+.program_icons {
+  margin-top: 5px !important;
+  float: left;
+  height: 110px;
+}
+.discription {
+  text-align: justify;
+  font-size: 13px;
+}

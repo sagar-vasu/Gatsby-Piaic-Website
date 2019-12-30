@@ -1,0 +1,29 @@
+.card {
+  width: 260px;
+  height: 347px;
+  padding: 20px;
+  background-color: white;
+  color: #212529;
+  text-align: center;
+  box-shadow: rgb(211, 211, 211) 0px 0px 40px -15px;
+  margin: 15px;
+}
+.img {
+  border-radius: 100% !important;
+  width: 136px !important;
+  height: 136px !important;
+  align-self: center;
+  border: 2px solid #00cf9e;
+  padding: 3px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 545;
+}
+.shortInfo {
+  font-size: 11px;
+  color: #8a8982;
+}
+.links {
+  margin: 3px;
+}

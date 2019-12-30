@@ -1,0 +1,47 @@
+.box {
+  color: rgb(134, 98, 98);
+  height: 150px;
+  width: 300px;
+  background-color: white;
+  margin: auto;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  border-radius: 5px;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: inherit;
+    color:white;
+}
+
+.box p {
+  padding: 25px;
+  border-radius: 5px 5px 0px 0px;
+}
+.courseName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-weight: bold;
+}
+.a:hover {
+  background-color: "rgb(29, 43, 80)";
+}
+#a:hover {
+  background-color: "";
+}
+
+#a:hover {
+  background-color: "";
+}
+
+#a:hover {
+  background-color: "";
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -65px !important;
+}

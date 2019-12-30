@@ -1,0 +1,83 @@
+
+.headermain {
+    display: flex;
+    justify-content: space-between;
+    background-color: #01645f !important;
+    padding: 10px;
+}
+
+.mainnav{
+    display: flex;
+    list-style-type: none;
+    border: 2px solid;
+}
+.logo{
+    font-weight: bold;
+    color: blanchedalmond;
+    font-family: cursive;
+    margin-top: 8px;
+    margin-left: 3em;
+    margin-top: -10px;
+
+}
+.image{
+    position: absolute;
+    height: 250px;
+    width: 90px;
+    top:0;
+    left: 30px;
+    margin-top: -50px !important;
+}
+.li{
+    text-decoration: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    color: #e9e1e1;
+}
+.li:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.toogle{
+    color:#01645f !important;
+    background-color: white !important;
+}
+.links{
+    color: white;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px !important;
+}
+.links:hover{
+    color: #18bdb4 !important;
+}
+.collapse{
+    border: 2px solid;
+}
+.dropdown{
+    background-color: #01645f !important;
+    padding: 0px !important;
+    // border: none !important;
+}
+.dropdown:hover{
+    background-color: #01645f !important;
+}
+.options{
+    color: white !important;
+    border-bottom: 1px solid #18bdb4 !important;
+}
+.options:hover{
+    background-color: #01645f !important;
+    color: #18bdb4 !important;
+}
+
+.pages{
+color:  white !important;
+text-decoration: none;
+}
+.pages:hover{
+    text-decoration: none;
+    color: #18bdb4 !important;
+
+}

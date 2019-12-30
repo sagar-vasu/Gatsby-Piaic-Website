@@ -1,0 +1,15 @@
+.circle-line {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 14.4vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 87% !important;
+  width: 4px;
+  background: #192a56;
+  margin-top: 100%;
+  margin-bottom: 100%;
+
+}

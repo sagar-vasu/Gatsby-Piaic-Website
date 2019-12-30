@@ -1,0 +1,29 @@
+.container {
+  margin: 8%;
+}
+.heading {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #017969;
+  font-size: 32px;
+  line-height: 39.04px;
+}
+
+.teamCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.images {
+  margin: 5px;
+}
