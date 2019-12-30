@@ -1,42 +1,90 @@
-import React from "react"
+import React, { useState, useCallback } from "react"
 import Layout from "./../componets/Layout"
-import Gallery from "react-grid-gallery"
+import Gallery from "react-photo-gallery"
+import Carousel, { Modal, ModalGateway } from "react-images"
+import { useStaticQuery, graphql } from "gatsby"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Classes from "./Styles/Wit.module.scss"
 
 const WIT = props => {
-  const IMAGES = [
+  const all_data = useStaticQuery(graphql`
     {
-      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-      thumbnail:
-        "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      caption: "After Rain (Jeshu John - designerspics.com)",
-    },
-    {
-      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-      thumbnail:
-        "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      tags: [
-        { value: "Ocean", title: "Ocean" },
-        { value: "People", title: "People" },
-      ],
-      caption: "Boats (Jeshu John - designerspics.com)",
-    },
+      allContentfulWit {
+        nodes {
+          title
+          info
+          details {
+            json
+          }
+          gallery {
+            file {
+              url
+            }
+          }
+          slider {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  `)
 
-    {
-      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-      thumbnail:
-        "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-    },
-  ]
+  const photos = all_data.allContentfulWit.nodes[0].slider.file
+  console.log(photos, "here is photo")
+  const [currentImage, setCurrentImage] = useState(0)
+  const [viewerIsOpen, setViewerIsOpen] = useState(false)
+
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index)
+    setViewerIsOpen(true)
+  }, [])
+
+  const closeLightbox = () => {
+    setCurrentImage(0)
+    setViewerIsOpen(false)
+  }
 
   return (
     <Layout>
-      <Gallery images={IMAGES} />,{/* document.getElementById('example-0') */}
+      <div>
+        <div>
+          <img src={photos.url} width="100%" />
+        </div>
+        <div>
+          <p className={Classes.detail}>
+            {documentToReactComponents(
+              all_data.allContentfulWit.nodes[0].details.json
+            )}
+          </p>
+        </div>
+        <div className={Classes.galleryInfo}>
+          <h3 className={Classes.title}>
+            {all_data.allContentfulWit.nodes[0].title}
+          </h3>
+        </div>
+        <p className={Classes.info}>
+          {all_data.allContentfulWit.nodes[0].info}
+        </p>
+        <div style={{ marginTop: "600px" }}>
+          {/* <Gallery photos={photos} onClick={openLightbox} />
+          <ModalGateway>
+            {viewerIsOpen ? (
+              <Modal onClose={closeLightbox}>
+                <Carousel
+                  currentIndex={currentImage}
+                  views={photos.map(x => ({
+                    ...x,
+                    srcset: x.srcSet,
+                    caption: x.title,
+                  }))}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway> */}
+        </div>
+      </div>
     </Layout>
   )
 }

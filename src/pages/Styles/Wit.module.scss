@@ -1,0 +1,31 @@
+.detail {
+  font-weight: 560;
+  font-size: 16px;
+  text-align: justify;
+  text-decoration: none solid rgb(33, 37, 41);
+  font-family: sans-serif;
+  color: #46464b;
+  margin: 7%;
+  padding-top: 2%;
+  opacity: 0.61;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 54px;
+  font-weight: 500 !important;
+  border-bottom: 2px solid #737373;
+  display: inline-block;
+}
+
+.galleryInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  font-weight: 600;
+  letter-spacing: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
