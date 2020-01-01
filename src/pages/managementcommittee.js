@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "./../componets/Layout"
-import { Card } from "../componets"
+import { Layout } from "../componets"
+import { CommitteeCard } from "../componets"
 import Classes from "./Styles/Management.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -43,7 +43,7 @@ const ManagementCommite = () => {
           {data.team
             ? data.team.members.map((v, i) => {
                 return (
-                  <Card
+                  <CommitteeCard
                     img={v.url}
                     title={v.name}
                     info={v.position}
@@ -59,8 +59,13 @@ const ManagementCommite = () => {
             {data.images
               ? data.images.partnersImages.map((val, i) => {
                   return (
-                    <a href={val.address} target="_Blank">
+                    <a
+                      href={val.address}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <img
+                        alt="img"
                         src={val.url}
                         width={val.width}
                         height={val.height}

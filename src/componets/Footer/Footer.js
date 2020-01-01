@@ -1,6 +1,6 @@
 import React from "react"
-import Classes from "./styeles/footer.module.scss"
-import footer_logo from "./../images/footer_logo.png"
+import Classes from "./Footer.module.scss"
+import footer_logo from "../../images/footer_logo.png"
 const Footer = props => {
   return (
     <>

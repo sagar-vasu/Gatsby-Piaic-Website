@@ -1,8 +1,6 @@
 import React from "react"
-import Layout from "./../componets/Layout"
+import { Layout } from "../componets"
 import Mappic from "./../images/map.png"
-import Grid from "@material-ui/core/Grid"
-import Paper from "@material-ui/core/Paper"
 import Classes from "./Styles/Work.module.scss"
 
 const HowItWorks = () => (

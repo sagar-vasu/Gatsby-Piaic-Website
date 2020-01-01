@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../componets/Layout"
+import { Layout } from "../componets"
 import Classes from "./Styles/About.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"

@@ -1,5 +1,5 @@
 import React from "react"
-import coursesStyle from "./Styeles/courses.module.scss"
+import coursesStyle from "./Courses.module.scss"
 const Courses = () => {
   return (
     <div className={coursesStyle.container}>
@@ -40,7 +40,7 @@ const Courses = () => {
         </div>
       </div>
 
-      <div style={{ borderRadius: 5,backgroundColor:"rgb(111, 216, 212)" }}>
+      <div style={{ borderRadius: 5, backgroundColor: "rgb(111, 216, 212)" }}>
         <div className={coursesStyle.box}>
           <p style={{ backgroundColor: "rgb(66, 161, 158)" }}></p>
           <div

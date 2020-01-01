@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "./../componets/Layout"
+import {Layout} from "../componets"
 import Grid from "@material-ui/core/Grid"
 import Paper from "@material-ui/core/Paper"
 import Styles from "./Styles/Artificial.module.scss"

@@ -1,7 +1,7 @@
 import React from "react"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import './Styeles/prgramSlider.css'
+import "./ProgramSlider.module.scss"
 export default class Posts extends React.Component {
   render() {
     const responsive = {
@@ -24,18 +24,18 @@ export default class Posts extends React.Component {
     return (
       <div
         style={{
-          marginTop:"5%",
-          width:"94%",
-          float:"right",
-
+          marginTop: "5%",
+          width: "94%",
+          float: "right",
         }}
       >
-        <div style={{border:"1.5px solid",width:100}}></div>
-          <p className="title">Programs in Development</p>
-        <Carousel 
-        showDots={true}
-         responsive={responsive} 
-         className="slider_section">
+        <div style={{ border: "1.5px solid", width: 100 }}></div>
+        <p className="title">Programs in Development</p>
+        <Carousel
+          showDots={true}
+          responsive={responsive}
+          className="slider_section"
+        >
           <div className="box_1">SDN/NFV for 5G</div>
           <div className="box_2">AUGMENTED REALITY</div>
           <div className="box_3">ENTREPRENEURSHIP</div>
