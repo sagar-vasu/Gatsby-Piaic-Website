@@ -1,0 +1,381 @@
+.container {
+  background-color: #33322d;
+}
+
+.headingContainer {
+  text-align: center;
+}
+.heading {
+  color: white;
+  text-align: center;
+  font-size: 2.5vmax;
+  padding-top: 11px;
+  border-bottom: 2px solid hsl(165, 100%, 41%);
+  display: inline-block;
+  font-weight: 540;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 90px;
+  padding-top: 5px;
+}
+
+.series {
+  font-size: 26px;
+  color: white;
+  float: right;
+  width: 70px;
+  height: 70px;
+  background-color: hsl(165, 100%, 41%);
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.paragraph {
+  margin-top: 30px;
+  margin-left: 50px;
+  color: white;
+  font-size: 23px;
+}
+
+.locationContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.input {
+  color: #017969;
+  width: 200px;
+  // border: 3px solid hsl(165, 100%, 41%);
+  // background-color: hsl(165, 100%, 41%);
+  background-color: white;
+  padding: 5px;
+  margin: 0px;
+}
+table {
+  border-collapse: separate !important;
+  border-spacing: 12px !important;
+}
+table tr td {
+  align-items: center;
+}
+table tr {
+  padding: 20px !important;
+  border: 2px solid;
+}
+.numbering{
+  color: hsl(165, 100%, 41%);
+  font-weight: bold;
+}
+.circle {
+  border: 2px solid;
+  border-color: hsl(165, 100%, 41%);
+  padding: 6px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 0px;
+}
+// .number1 {
+//   font-size: 40px;
+//   color: white;
+//   border: 2px solid #00cf9e;
+//   border-radius: 100%;
+//   display: inline;
+//   background-color: #00cf9e;
+//   padding: 30px;
+//   padding-top: 2px;
+//   padding-bottom: 10px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-left: 70px;
+// }
+// .numPra {
+//   padding-top: 30px;
+// }
+
+// .table {
+//   /* border: 2px solid red; */
+//   /* background-color: red; */
+//   width: 400px;
+//   float: right;
+//   /* margin-top: 100px; */
+//   margin-right: 150px;
+//   height: -10px;
+// }
+// .numbring {
+//   font-size: 30px;
+//   width: 70px !important;
+//   color: #00cf9e;
+// }
+
+// #redio {
+//   /* width: 15px; */
+//   /* height: 15px; */
+//   border-radius: 15px;
+//   /* top: -2px; */
+//   /* left: -1px; */
+//   position: relative;
+//   background-color: #218521;
+//   content: "";
+//   display: inline-block;
+//   visibility: visible;
+//   border: 2px solid white;
+// }
+
+// .div {
+//   margin: 0 0 0.75em 0;
+//   display: inline;
+//   padding-left: 10px;
+// }
+
+// .input[type="radio"] {
+//   display: none;
+// }
+// .input[type="radio"] + label {
+//   color: #292321;
+//   font-family: Arial, sans-serif;
+//   font-size: 14px;
+// }
+// .input[type="radio"] + label span {
+//   display: inline-block;
+//   width: 19px;
+//   height: 19px;
+//   margin: -1px 4px 0 0;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   -moz-border-radius: 50%;
+//   border-radius: 50%;
+// }
+
+// .input[type="radio"] + label span {
+//   background-color: #292321;
+//   border: 2px solid #00cf9e;
+// }
+
+// .input[type="radio"]:checked + label span {
+//   border: 2px solid #00cf9e;
+// }
+
+// .input[type="radio"] + label span,
+// .input[type="radio"]:checked + label span {
+//   -webkit-transition: background-color 0.4s linear;
+//   -o-transition: background-color 0.4s linear;
+//   -moz-transition: background-color 0.4s linear;
+//   transition: background-color 0.4s linear;
+// }
+
+// .number2 {
+//   font-size: 40px;
+//   color: white;
+//   border: 2px solid #00cf9e;
+//   border-radius: 100%;
+//   display: inline-block;
+//   background-color: #00cf9e;
+//   /* padding: 30px; */
+//   padding-top: 10px;
+//   padding-bottom: 20px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-top: 30px;
+//   margin-left: 50px;
+// }
+// .numberText {
+//   /* float: right; */
+//   margin-left: 20%;
+//   /* border: 1px solid rgb(5, 116, 73); */
+//   margin-top: -70px;
+//   width: 71%;
+//   color: rgb(5, 116, 73);
+//   /* font-family: serif; */
+//   font-weight: 900;
+//   font-size: 18px;
+//   padding-bottom: 40px;
+// }
+// .number3 {
+//   font-size: 40px;
+//   color: white;
+//   border: 2px solid #00cf9e;
+//   border-radius: 100%;
+//   display: inline-block;
+//   background-color: #00cf9e;
+//   /* padding: 30px; */
+//   padding-top: 10px;
+//   padding-bottom: 20px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-top: 70px;
+//   margin-left: 50px;
+// }
+
+// .number4 {
+//   font-size: 40px;
+//   color: #00cf9e;
+//   border: 2px solid white;
+//   border-radius: 100%;
+//   display: inline-block;
+//   background-color: white;
+//   /* padding: 30px; */
+//   padding-top: 10px;
+//   padding-bottom: 20px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-top: 70px;
+//   margin-left: 50px;
+// }
+
+// .numberText4 {
+//   /* float: right; */
+//   margin-left: 20%;
+//   /* border: 1px solid rgb(5, 116, 73); */
+//   margin-top: -100px;
+//   width: 71%;
+//   color: white;
+//   /* font-family: serif; */
+//   /* font-weight: 900; */
+//   font-size: 18px;
+//   padding-bottom: 40px;
+// }
+
+// .number5 {
+//   font-size: 40px;
+//   color: white;
+//   border: 2px solid #00cf9e;
+//   border-radius: 100%;
+//   display: inline-block;
+//   background-color: #00cf9e;
+//   /* padding: 30px; */
+//   padding-top: 10px;
+//   padding-bottom: 20px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-top: 70px;
+//   margin-left: 50px;
+// }
+
+// .numberText5 {
+//   /* float: right; */
+//   margin-left: 20%;
+//   /* border: 1px solid rgb(5, 116, 73); */
+//   margin-top: -50px;
+//   width: 71%;
+//   color: #00cf9e;
+//   /* font-family: serif; */
+//   /* font-weight: 900; */
+//   font-size: 18px;
+//   padding-bottom: 40px;
+// }
+
+// .numberText6 {
+//   /* float: right; */
+//   margin-left: 20%;
+//   /* border: 1px solid rgb(5, 116, 73); */
+//   margin-top: -50px;
+//   width: 71%;
+//   color: white;
+//   padding-bottom: 40px;
+//   /* font-family: serif; */
+//   /* font-weight: 900; */
+//   font-size: 18px;
+// }
+
+// .number7 {
+//   font-size: 40px;
+//   color: white;
+//   border: 2px solid #00cf9e;
+//   border-radius: 100%;
+//   display: inline-block;
+//   background-color: #00cf9e;
+//   /* padding: 30px; */
+//   padding-top: 10px;
+//   padding-bottom: 20px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-top: 70px;
+//   margin-left: 50px;
+// }
+
+// .numberText7 {
+//   /* float: right; */
+//   margin-left: 20%;
+//   /* border: 1px solid rgb(5, 116, 73); */
+//   margin-top: -70px;
+//   width: 71%;
+//   color: white;
+//   /* font-family: serif; */
+//   /* font-weight: 900; */
+//   font-size: 18px;
+//   padding-bottom: 20px;
+// }
+
+// .numberPText {
+//   line-height: 0px;
+// }
+
+// .city {
+//   width: 200px;
+//   font-size: 13px;
+//   font-weight: 600;
+//   padding: 3px;
+//   margin: auto;
+//   color: #00cf9e;
+//   background-color: white;
+// }
+// .sialkot {
+//   width: 200px;
+//   font-size: 13px;
+//   font-weight: 600;
+//   padding: 3px;
+//   margin: auto;
+//   background-color: #00cf9e;
+//   color: white;
+// }
+
+// .sialkot,
+// #radio01[type="radio"]:checked + label span {
+//   border: 2px solid #00cf9e;
+// }
+// .table td {
+//   color: white;
+//   padding-bottom: calc(0.525rem - 36px);
+//   padding-top: -14.275rem;
+//   border-bottom: none;
+//   padding: 2px;
+// }
+
+// .table {
+//   width: 300px;
+// }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sliderContainer {
+    padding: 10px;
+    justify-content: center;
+  }
+  .sliderContainer p {
+    text-align: center;
+    margin: 30px auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+//   .sliderContainer {
+//     padding:100px;
+//   }
+// }
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {
+//   .sliderContainer {
+//     padding: 0px;
+//   }
+// }

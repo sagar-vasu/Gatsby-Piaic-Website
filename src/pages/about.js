@@ -41,7 +41,7 @@ const ThePresedent = () => {
           <p className={Classes.shortText}>{data.shortText}</p>
           {data.childContentfulAboutSocialLinksJsonNode.links &&
             data.childContentfulAboutSocialLinksJsonNode.links.map((val, i) => (
-              <a href={val.address} target="_Blank">
+              <a key={i} href={val.address} target="_Blank">
                 <img
                   src={val.icon}
                   width="25px"
