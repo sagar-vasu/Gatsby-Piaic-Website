@@ -1,59 +1,29 @@
 import React from "react"
-import coursesStyle from "./Courses.module.scss"
-const Courses = () => {
-  return (
-    <div className={coursesStyle.container}>
-      <div style={{ borderRadius: 5, backgroundColor: "rgb(72, 91, 137)" }}>
-        <div className={coursesStyle.box} id={coursesStyle.a}>
-          <p style={{ backgroundColor: "rgb(29, 43, 80)" }}></p>
-          <div
-            className={coursesStyle.courseName}
-            style={{ color: "rgb(29, 43, 80)" }}
-          >
-            Artificial Inteligence
-          </div>
-        </div>
-      </div>
+import Styles from "./Courses.module.scss"
+const Card = props => (
+  <div className={Styles.card}>
+    <div
+      className={Styles.card_top_border}
+      style={props.style}
+      className={Styles.card_1}
+    ></div>
 
-      <div style={{ borderRadius: 5, backgroundColor: "rgb(234, 100, 161)" }}>
-        <div className={coursesStyle.box}>
-          <p style={{ backgroundColor: "rgb(225, 45, 129)" }}></p>
-          <div
-            className={coursesStyle.courseName}
-            style={{ color: "rgb(225, 45, 129)" }}
-            id="b"
-          >
-            Cloud Native and Mobile Web
-          </div>
-        </div>
-      </div>
-      <div style={{ borderRadius: 5, backgroundColor: "rgb(247, 221, 145)" }}>
-        <div className={coursesStyle.box}>
-          <p style={{ backgroundColor: "rgb(246, 202, 63)" }}></p>
-          <div
-            className={coursesStyle.courseName}
-            style={{ color: "rgb(246, 202, 63)" }}
-            id="c"
-          >
-            Blockchain
-          </div>
-        </div>
-      </div>
+    <div className={Styles.card_name}>
+      <span
+        className={Styles.title_1}
+        style={{ color: props.color, fontWeight: "bold" }}
+      >
+        {props.heading}
+      </span>
+    </div>
 
-      <div style={{ borderRadius: 5, backgroundColor: "rgb(111, 216, 212)" }}>
-        <div className={coursesStyle.box}>
-          <p style={{ backgroundColor: "rgb(66, 161, 158)" }}></p>
-          <div
-            className={coursesStyle.courseName}
-            style={{ color: "rgb(66, 161, 158)" }}
-            id="d"
-          >
-            Internet of Things and AI
-          </div>
-        </div>
+    <div className={Styles.overlay} style={props.style}>
+      <div className={Styles._text}>
+        <h5 className={Styles.title_heading}>{props.heading}</h5>
+        <span className={Styles.title_descripation}>{props.description}</span>
       </div>
     </div>
-  )
-}
+  </div>
+)
 
-export default Courses
+export default Card

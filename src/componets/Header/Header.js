@@ -1,6 +1,6 @@
 import headerStyles from "./Header.module.scss"
-import { Link } from "gatsby"
-import Logo from "../../images/logo.svg"
+import {Link} from 'gatsby'
+import Logo from "./../../images/logo.svg"
 import React, { useState } from "react"
 import {
   Collapse,
@@ -25,7 +25,7 @@ const Header = props => {
 
   return (
     <div>
-      <Navbar expand="md" className={headerStyles.headermain}>
+      <Navbar expand="md" className={headerStyles.headermain} fixed='top' >
         <NavbarBrand>
           <img src={Logo} className={headerStyles.image} />
         </NavbarBrand>
@@ -35,18 +35,19 @@ const Header = props => {
 
           <Nav className="mr-right" navbar>
             <NavItem>
-              <NavLink className={headerStyles.links}>
-                <Link to="./howitworks" className={headerStyles.pages}>
-                  How it works
+
+              <NavLink className={headerStyles.links} id={headerStyles.how_works}>
+                <Link to="./howitworks" className={headerStyles.pages}  >
+                How it works
                 </Link>
               </NavLink>
             </NavItem>
 
             <NavItem>
               <NavLink className={headerStyles.links}>
-                <Link to="./login" className={headerStyles.pages}>
-                  Apply
-                </Link>
+              <Link to="./login" className={headerStyles.pages}>
+              Apply
+                </Link>  
               </NavLink>
             </NavItem>
 
@@ -55,30 +56,10 @@ const Header = props => {
                 Available programs
               </DropdownToggle>
               <DropdownMenu right className={headerStyles.dropdown}>
-                <DropdownItem className={headerStyles.options}>
-                  {" "}
-                  <Link
-                    to="./artificial-inteligence"
-                    className={headerStyles.pages}
-                  >
-                    Artificial inteligence
-                  </Link>{" "}
-                </DropdownItem>
-                <DropdownItem className={headerStyles.options}>
-                  <Link to="./cloud-native" className={headerStyles.pages}>
-                    Cloud Native and Mobile Web
-                  </Link>{" "}
-                </DropdownItem>
-                <DropdownItem className={headerStyles.options}>
-                  <Link to="./block-chain" className={headerStyles.pages}>
-                    Blockchain
-                  </Link>{" "}
-                </DropdownItem>
-                <DropdownItem className={headerStyles.options}>
-                  <Link to="./iot" className={headerStyles.pages}>
-                    Internet Of Things
-                  </Link>{" "}
-                </DropdownItem>
+                <DropdownItem className={headerStyles.options}> <Link to="./artificial-inteligence" className={headerStyles.pages}>Artificial inteligence</Link> </DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./cloud-native" className={headerStyles.pages}>Cloud Native and Mobile Web</Link> </DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./block-chain" className={headerStyles.pages}>Blockchain</Link> </DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./iot" className={headerStyles.pages}>Internet Of Things</Link> </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
 
@@ -87,16 +68,8 @@ const Header = props => {
                 Student center
               </DropdownToggle>
               <DropdownMenu right className={headerStyles.dropdown}>
-                <DropdownItem className={headerStyles.options}>
-                  <Link to="./entrytestkarachi" className={headerStyles.pages}>
-                    Karachi Entry Test Announcement
-                  </Link>
-                </DropdownItem>
-                <DropdownItem className={headerStyles.options}>
-                  <Link to="./scheduleofclasses" className={headerStyles.pages}>
-                    Commencement of Classes
-                  </Link>
-                </DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./entrytestkarachi" className={headerStyles.pages}>Karachi Entry Test Announcement</Link></DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./scheduleofclasses" className={headerStyles.pages}>Commencement of Classes</Link></DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
 
@@ -105,27 +78,14 @@ const Header = props => {
                 About
               </DropdownToggle>
               <DropdownMenu right className={headerStyles.dropdown}>
-                <DropdownItem className={headerStyles.options}>
-                  <Link to="./about" className={headerStyles.pages}>
-                    The President
-                  </Link>
-                </DropdownItem>
-                <DropdownItem className={headerStyles.options}>
-                  <Link
-                    to="./managementcommittee"
-                    className={headerStyles.pages}
-                  >
-                    Management Committie
-                  </Link>
-                </DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./about" className={headerStyles.pages}>The President</Link></DropdownItem>
+                <DropdownItem className={headerStyles.options}><Link to="./managementcommittee" className={headerStyles.pages}>Management Committie</Link></DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
 
             <NavItem>
               <NavLink className={headerStyles.links}>
-                <Link to="./WIT" className={headerStyles.pages}>
-                  WIT
-                </Link>
+                <Link to="./WIT" className={headerStyles.pages}>WIT</Link>
               </NavLink>
             </NavItem>
           </Nav>

@@ -1,7 +1,7 @@
 import React from "react"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import "./ProgramSlider.module.scss"
+import "./ProgramSlider.scss"
 export default class Posts extends React.Component {
   render() {
     const responsive = {
@@ -30,18 +30,20 @@ export default class Posts extends React.Component {
         }}
       >
         <div style={{ border: "1.5px solid", width: 100 }}></div>
-        <p className="title">Programs in Development</p>
+        <p className="title">{this.props.title}</p>
         <Carousel
           showDots={true}
           responsive={responsive}
           className="slider_section"
         >
-          <div className="box_1">SDN/NFV for 5G</div>
-          <div className="box_2">AUGMENTED REALITY</div>
-          <div className="box_3">ENTREPRENEURSHIP</div>
-          <div className="box_4">MOBILE WEB SPECIALIST</div>
-          <div className="box_5">iOS</div>
-          <div className="box_6">ANDROID</div>
+          {this.props.slides &&
+            this.props.slides.map((v, i) => {
+              return (
+                <div className={v.background} key={i}>
+                  {v.name}
+                </div>
+              )
+            })}
         </Carousel>
       </div>
     )

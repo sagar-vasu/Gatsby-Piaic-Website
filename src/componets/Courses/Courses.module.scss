@@ -1,47 +1,84 @@
-.box {
-  color: rgb(134, 98, 98);
-  height: 150px;
-  width: 300px;
-  background-color: white;
-  margin: auto;
-  -moz-box-shadow: 3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 3px 3px 5px 6px #ccc;
-  border-radius: 5px;
-}
-.box:hover{
-    cursor: pointer;
-    background-color: inherit;
-    color:white;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  max-width: 322px;
+  position: relative;
+  border-radius: 6px;
+  height: 180px;
+  float: left;
+  width: 23%;
+  margin: 12px;
+  padding: 0px;
 }
 
-.box p {
-  padding: 25px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card_top_border {
+  background-color: #192a56 !important;
+  height: 40px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card_1 {
+  padding: 20px;
   border-radius: 5px 5px 0px 0px;
 }
-.courseName {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+
+.card_name {
+  padding: 50px 0px;
+  .card-title {
+    font-weight: bold;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+._text {
+  color: #ffffff;
+  margin: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+.title_heading {
+  color: #ffffff;
+  padding-top: 2px;
+
+  display: block;
   font-weight: bold;
 }
-.a:hover {
-  background-color: "rgb(29, 43, 80)";
-}
-#a:hover {
-  background-color: "";
-}
-
-#a:hover {
-  background-color: "";
+.title_descripation {
+  font-size: 11px;
+  min-height: auto;
+  min-width: auto;
+  justify-content: center;
+  text-indent: 0em;
+  text-align: left;
 }
 
-#a:hover {
-  background-color: "";
-}
-.container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -65px !important;
+/* Responsive  */
+@media only screen and (max-width: 1200px) {
+  .card {
+    // width: 250px;
+    width: 90%;
+  }
 }

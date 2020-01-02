@@ -1,15 +1,126 @@
-.presidentImg{
-    height: 600px;
+* {
+  font-family: sans-serif !important;
 }
-.section_a{
-    background-color: rgb(231, 227, 228);
+.container {
+  padding: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(231, 227, 228);
+}
+.presidentImg {
+  height: 100%;
+  margin: 8%;
+  margin-left: 0%;
+  margin-bottom: 0px;
+}
+.section_a {
+  background-color: rgb(231, 227, 228);
+}
+.title {
+  font-weight: bold;
+  font-size: 4vw;
+}
+.info {
+  font-size: 2vw;
+}
+.innderSection_A {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+.name {
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-.innderSection_A{
-    padding: 5%;
-    margin: 2%;
-}
-.name{
+@media screen and (max-width: 870px) {
+  .presidentImg {
+    margin: 0%;
+    height: 200px !important;
+    margin-top: 15%;
+  }
+  .innderSection_A {
+    padding-left: 0%;
+  }
+  .title {
+    font-size: 8vw;
     font-weight: bold;
-    font-size: 3rem;
+  }
+  .info {
+    font-size: 5vw;
+  }
+  table {
+    float: left;
+  }
+  td {
+    padding: 0px 15px 0px 15px !important;
+  }
+}
+
+td {
+  color: black;
+  padding: 0px 30px 0px 30px;
+}
+.apply_btn {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  width: 120px;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  background-image: linear-gradient(
+    to right top,
+    #0eb9a1,
+    #00c19f,
+    #00c89b,
+    #00cf95,
+    #08d68e
+  );
+}
+.total_student {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+// Card Section
+.card_div {
+  position: relative;
+  margin-top: -7%;
+}
+.row {
+  border-radius: 5px;
+  // margin: 0px 30px;
+  padding: 0px 20px;
+  // flex-direction: row;
+  // display: flex;
+}
+.card_heading {
+  text-align: center;
+  margin: 30px;
+}
+.heading {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  line-height: 32px;
+  color: rgb(88, 87, 87);
+}
+
+.strategic_partners_section {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(228, 222, 223);
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.images {
+  margin: 5px;
 }

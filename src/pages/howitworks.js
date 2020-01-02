@@ -90,7 +90,7 @@ const HowItWorks = () => {
                             {v.city}
                           </p>
                         </td>
-                        <td>{v.started}</td>
+                        <td style={{color:"white"}}>{v.started}</td>
                       </tr>
                     )
                   })}
